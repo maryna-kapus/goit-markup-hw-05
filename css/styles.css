@@ -786,8 +786,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .s-link-foot {
   display: inline-block;
