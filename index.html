@@ -66,10 +66,47 @@
             </h1>
             <button type="button" class="hero-button" data-modal-open>
               Замовити послугу
-            </button>
+            </button >
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
-                <p></p>
+                
+                <form class="">
+                <p class="sent-data">Залиште свої дані, ми вам передзвонимо</p>
+                  <div class="wrap-hero">
+                    <label class="modal-open field">
+                      Ім'я
+                      <input type="text" name="username"  class="modal-input" autofocus/>
+                      <svg width="12" height="12" class="Vector-1">
+                        <use href="./svg/symbol-defs.svg#Vector-1"></use>
+                      </svg>
+                    </label>
+                  </div>
+                
+                  <label class="modal-open">
+                    Телефон
+                    <input type="tel" name="phone_number" class="modal-input" />
+                  </label>
+                  <label class="modal-open">
+                    Пошта
+                    <input type="email" name="email" class="modal-input"/>
+                  </label>
+                  <label class="modal-open">
+                    Коментар
+                    <textarea class="enter-text" name="feedback" cols="30" rows="5" placeholder="Введіть текст"></textarea>
+                  </label>
+
+
+
+
+
+                  <label class="modal-open">
+                    <input type="checkbox" name="Погоджуюся" value="Погоджуюся з розсилкою та приймаю Умови договору" class="checkbox" checked />
+                    Погоджуюся з розсилкою та приймаю Умови договору
+                  </label>
+                  <button class="btn-sent" type="submit">Відправити</button>
+                
+                </form>
+                
                 <button data-modal-close class="close">
                   <a href="#">
                   <svg width="11" height="11" class="icon-Vector">
@@ -554,10 +591,13 @@
             <label>
               <input type="email" name="email" placeholder="E-mail" class="E-mail"/>
             </label>
-            <button type="submit" class="sign">Підписатися</a>
+
+            <button type="submit" class="sign">
+              <span class="text-sign">Підписатися</span>
             <svg width="24" height="24" class="icon-send">
               <use href="./svg/symbol-defs.svg#icon-send"></use>
-            </svg></button>
+            </svg>
+          </button>
               </form>
         </div>
       </div>
