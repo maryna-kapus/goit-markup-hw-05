@@ -206,6 +206,7 @@ body {
 .fill-mail,
 .fill-mobile {
   fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contact:focus .fill-mail,
@@ -309,7 +310,10 @@ body {
 
 .modal{
   position: relative;
- 
+  padding-left: 40px;
+    padding-right: 39px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .close{
@@ -323,18 +327,43 @@ body {
   }
 
 .sent-data{
-  font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    letter-spacing: 0.03em;
   
+  padding-top: 40px;
+    padding-bottom: 30px;
     color: #212121;
     }
 
+.modal-open {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 
+  color: #757575;
+
+
+  align-items: center;
+  text-align: center;
+  /* width: 100%;
+      height: 100%; */
+}
+
+.enter-text {
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.field {
+  /* min-width: 448px;
+  min-height: 40px; */
+}
 
 
 
@@ -628,9 +657,20 @@ body {
 .icon-team:hover .facebook-team,
 .icon-team:focus .facebook-team {
   fill: #ffffff;
-
+  
 }
 
+.linkedin-team,
+.linkedin-team,
+.twitter-team,
+.twitter-team,
+.instagram-team,
+.instagram-team,
+.facebook-team,
+.facebook-team
+{
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* .s-link:hover,
 .s-link:focus'{
   background-color: var(--accent-color);
@@ -931,13 +971,18 @@ body {
     border: 1px solid #2196F3;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
+      cursor: pointer;
 }
 
 .distribution-li:not(:last-child) {
   margin-right: 10px;
 }
 
-
+.sign:focus,
+.sign:hover,
+.text-sign{
+  fill: #188CE8;
+}
 
 .wrap{
   display: flex;
