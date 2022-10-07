@@ -307,8 +307,8 @@ body {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
-  transition: transform 500ms var(--transition-timing);
+  /* transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
+  transition: transform 500ms var(--transition-timing); */
 }
 
 .modal-btn {
